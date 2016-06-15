@@ -1,0 +1,5 @@
+php_flag engine off
+<FilesMatch "\.(php)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>
